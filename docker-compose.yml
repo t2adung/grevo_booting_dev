@@ -9,6 +9,7 @@ services:
       - "8080:80"
     volumes:
       - .:/home/demo
+      - /home/demo/vendor
     networks:
       - backend
 
