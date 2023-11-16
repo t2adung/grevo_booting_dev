@@ -1,7 +1,5 @@
 FROM php:8.1-apache
 
-COPY apache-config.conf /etc/apache2/sites-available/000-default.conf
-
 WORKDIR /home/demo
 
 RUN apt-get update \

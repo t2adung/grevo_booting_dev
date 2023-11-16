@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8080:80"
+      - "8082:80"
     volumes:
       - .:/home/demo
       - /home/demo/vendor
@@ -41,6 +41,8 @@ services:
     image: nginx
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - "8080:80"
     depends_on:
       - app
       - phpmyadmin
